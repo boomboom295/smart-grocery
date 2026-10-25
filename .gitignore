@@ -9,3 +9,5 @@ data/pantry.json
 data/plan.output.json
 data/plan.report.md
 data/*.csv
+data/compare.md
+data/compare.json

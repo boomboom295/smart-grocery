@@ -1,0 +1,861 @@
+{
+  "recipes": [
+    {
+      "name": "Omelette",
+      "time_min": 10,
+      "calories": 300,
+      "ingredients": [
+        "eggs",
+        "onion",
+        "salt",
+        "pepper",
+        "butter"
+      ],
+      "instructions": [
+        "Crack and whisk eggs",
+        "Melt butter in pan",
+        "Add onion",
+        "Pour eggs",
+        "Fold and season"
+      ]
+    },
+    {
+      "name": "Simple Pasta",
+      "time_min": 20,
+      "calories": 520,
+      "ingredients": [
+        "pasta",
+        "olive oil",
+        "garlic",
+        "parmesan",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Boil pasta",
+        "Saute garlic in oil",
+        "Toss pasta",
+        "Add parmesan",
+        "Season"
+      ]
+    },
+    {
+      "name": "Veggie Stir Fry",
+      "time_min": 18,
+      "calories": 420,
+      "ingredients": [
+        "rice",
+        "soy sauce",
+        "broccoli",
+        "carrot",
+        "garlic",
+        "ginger",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Cook rice",
+        "Heat oil",
+        "Add garlic and ginger",
+        "Add vegetables",
+        "Add soy sauce"
+      ]
+    },
+    {
+      "name": "Chickpea Salad",
+      "time_min": 12,
+      "calories": 350,
+      "ingredients": [
+        "chickpeas",
+        "tomato",
+        "cucumber",
+        "olive oil",
+        "lemon",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Rinse chickpeas",
+        "Chop vegetables",
+        "Mix with oil and lemon",
+        "Season"
+      ]
+    },
+    {
+      "name": "Tomato Basil Soup",
+      "time_min": 25,
+      "calories": 260,
+      "ingredients": [
+        "tomato",
+        "onion",
+        "garlic",
+        "basil",
+        "olive oil",
+        "salt",
+        "pepper",
+        "vegetable broth"
+      ],
+      "instructions": [
+        "Saute onion and garlic",
+        "Add tomato and broth",
+        "Simmer",
+        "Blend",
+        "Add basil"
+      ]
+    },
+    {
+      "name": "Avocado Toast",
+      "time_min": 8,
+      "calories": 350,
+      "ingredients": [
+        "bread",
+        "avocado",
+        "lemon",
+        "salt",
+        "pepper",
+        "olive oil"
+      ],
+      "instructions": [
+        "Toast bread",
+        "Mash avocado with lemon",
+        "Spread",
+        "Drizzle oil",
+        "Season"
+      ]
+    },
+    {
+      "name": "Peanut Noodles",
+      "time_min": 22,
+      "calories": 540,
+      "ingredients": [
+        "noodles",
+        "peanut butter",
+        "soy sauce",
+        "garlic",
+        "ginger",
+        "lime",
+        "sesame oil"
+      ],
+      "instructions": [
+        "Boil noodles",
+        "Whisk sauce",
+        "Toss noodles",
+        "Adjust lime"
+      ]
+    },
+    {
+      "name": "Greek Yogurt Parfait",
+      "time_min": 5,
+      "calories": 280,
+      "ingredients": [
+        "yogurt",
+        "honey",
+        "berries",
+        "granola"
+      ],
+      "instructions": [
+        "Layer yogurt",
+        "Add berries",
+        "Top with granola",
+        "Drizzle honey"
+      ]
+    },
+    {
+      "name": "Sheet Pan Veggies",
+      "time_min": 30,
+      "calories": 300,
+      "ingredients": [
+        "potato",
+        "carrot",
+        "broccoli",
+        "olive oil",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Preheat oven 425F",
+        "Chop vegetables",
+        "Toss in oil",
+        "Roast",
+        "Season"
+      ]
+    },
+    {
+      "name": "Lentil Curry",
+      "time_min": 28,
+      "calories": 480,
+      "ingredients": [
+        "lentils",
+        "onion",
+        "garlic",
+        "ginger",
+        "curry powder",
+        "tomato",
+        "coconut milk",
+        "salt"
+      ],
+      "instructions": [
+        "Saute aromatics",
+        "Add curry powder",
+        "Add lentils and tomato",
+        "Add coconut milk",
+        "Simmer"
+      ]
+    },
+    {
+      "name": "Pesto Pasta",
+      "time_min": 18,
+      "calories": 550,
+      "ingredients": [
+        "pasta",
+        "basil",
+        "garlic",
+        "parmesan",
+        "olive oil",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Boil pasta",
+        "Blend basil, garlic, oil, parmesan",
+        "Toss",
+        "Season"
+      ]
+    },
+    {
+      "name": "Tofu Scramble",
+      "time_min": 12,
+      "calories": 310,
+      "ingredients": [
+        "tofu",
+        "onion",
+        "turmeric",
+        "salt",
+        "pepper",
+        "oil"
+      ],
+      "instructions": [
+        "Crumble tofu",
+        "Saute onion",
+        "Add tofu and turmeric",
+        "Season"
+      ]
+    },
+    {
+      "name": "Garlic Fried Rice",
+      "time_min": 15,
+      "calories": 480,
+      "ingredients": [
+        "cooked rice",
+        "garlic",
+        "oil",
+        "salt",
+        "pepper",
+        "scallion"
+      ],
+      "instructions": [
+        "Heat oil",
+        "Add garlic",
+        "Stir-fry rice",
+        "Season",
+        "Top with scallion"
+      ]
+    },
+    {
+      "name": "Masala Omelette",
+      "time_min": 12,
+      "calories": 320,
+      "ingredients": [
+        "eggs",
+        "onion",
+        "tomato",
+        "cilantro",
+        "turmeric",
+        "salt",
+        "pepper",
+        "oil"
+      ],
+      "instructions": [
+        "Whisk eggs with spices",
+        "Saute onion & tomato",
+        "Add eggs",
+        "Cook & fold"
+      ]
+    },
+    {
+      "name": "Chana Masala (Quick)",
+      "time_min": 25,
+      "calories": 420,
+      "ingredients": [
+        "chickpeas",
+        "onion",
+        "garlic",
+        "tomato",
+        "oil",
+        "garam masala",
+        "salt"
+      ],
+      "instructions": [
+        "Saute onion & garlic",
+        "Add tomato & masala",
+        "Add chickpeas",
+        "Simmer & season"
+      ]
+    },
+    {
+      "name": "Aglio e Olio",
+      "time_min": 18,
+      "calories": 520,
+      "ingredients": [
+        "pasta",
+        "garlic",
+        "olive oil",
+        "chili flakes",
+        "parsley",
+        "salt"
+      ],
+      "instructions": [
+        "Cook pasta",
+        "Gently fry garlic in oil",
+        "Add chili",
+        "Toss pasta & parsley"
+      ]
+    },
+    {
+      "name": "Tomato Egg Curry",
+      "time_min": 25,
+      "calories": 360,
+      "ingredients": [
+        "eggs",
+        "onion",
+        "tomato",
+        "garlic",
+        "turmeric",
+        "curry powder",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Boil eggs",
+        "Make tomato-onion masala",
+        "Add spices",
+        "Add eggs & simmer"
+      ]
+    },
+    {
+      "name": "Paneer Bhurji (Tofu Swap OK)",
+      "time_min": 20,
+      "calories": 390,
+      "ingredients": [
+        "paneer",
+        "or tofu",
+        "onion",
+        "tomato",
+        "turmeric",
+        "garam masala",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Crumble paneer/tofu",
+        "Saute onion",
+        "Add tomato & spices",
+        "Fold in crumble"
+      ]
+    },
+    {
+      "name": "Veggie Quesadilla",
+      "time_min": 15,
+      "calories": 430,
+      "ingredients": [
+        "tortillas",
+        "cheese",
+        "onion",
+        "pepper",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Saute veg",
+        "Layer tortilla & cheese",
+        "Fold",
+        "Griddle both sides"
+      ]
+    },
+    {
+      "name": "Coconut Lentil Soup",
+      "time_min": 30,
+      "calories": 420,
+      "ingredients": [
+        "red lentils",
+        "onion",
+        "garlic",
+        "tomato",
+        "coconut milk",
+        "turmeric",
+        "salt"
+      ],
+      "instructions": [
+        "Rinse lentils",
+        "Saute aromatics",
+        "Add tomato & spices",
+        "Add water & simmer",
+        "Finish with coconut milk"
+      ]
+    },
+    {
+      "name": "Shakshuka (Simple)",
+      "time_min": 25,
+      "calories": 380,
+      "ingredients": [
+        "eggs",
+        "tomato",
+        "onion",
+        "garlic",
+        "paprika",
+        "oil",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Make tomato base",
+        "Spice",
+        "Crack eggs",
+        "Cover & set whites"
+      ]
+    },
+    {
+      "name": "Peanut Sesame Noodles",
+      "time_min": 18,
+      "calories": 560,
+      "ingredients": [
+        "noodles",
+        "peanut butter",
+        "soy sauce",
+        "sesame oil",
+        "garlic",
+        "scallion"
+      ],
+      "instructions": [
+        "Cook noodles",
+        "Whisk sauce",
+        "Toss together",
+        "Top with scallion"
+      ]
+    },
+    {
+      "name": "Curried Potatoes & Peas",
+      "time_min": 22,
+      "calories": 350,
+      "ingredients": [
+        "potato",
+        "peas",
+        "onion",
+        "garlic",
+        "turmeric",
+        "curry powder",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Saute onion/garlic",
+        "Add spices",
+        "Add potato & peas",
+        "Cover & steam till tender"
+      ]
+    },
+    {
+      "name": "Roasted Tomato Pasta",
+      "time_min": 28,
+      "calories": 540,
+      "ingredients": [
+        "pasta",
+        "tomato",
+        "garlic",
+        "olive oil",
+        "basil",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Roast tomato & garlic",
+        "Cook pasta",
+        "Toss with oil & basil",
+        "Season"
+      ]
+    },
+    {
+      "name": "Tomato Basil Pasta",
+      "time_min": 20,
+      "calories": 520,
+      "ingredients": [
+        "pasta",
+        "tomato",
+        "garlic",
+        "olive oil",
+        "basil",
+        "parmesan",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Boil pasta in salted water until al dente.",
+        "Saut\u00e9 garlic in olive oil 30\u201360 sec; add chopped tomato 3\u20134 min.",
+        "Toss pasta with sauce and basil; finish with parmesan, salt, pepper."
+      ]
+    },
+    {
+      "name": "Black Bean Tacos",
+      "time_min": 18,
+      "calories": 480,
+      "ingredients": [
+        "tortilla",
+        "black beans",
+        "onion",
+        "cumin",
+        "garlic",
+        "tomato",
+        "lettuce",
+        "salt",
+        "oil"
+      ],
+      "instructions": [
+        "Warm oil; cook onion and garlic 2\u20133 min.",
+        "Add black beans, cumin, salt; mash lightly.",
+        "Fill tortillas; top with tomato and lettuce."
+      ]
+    },
+    {
+      "name": "Tofu Stir-Fry",
+      "time_min": 22,
+      "calories": 420,
+      "ingredients": [
+        "tofu",
+        "broccoli",
+        "carrot",
+        "soy sauce",
+        "garlic",
+        "sesame oil",
+        "rice"
+      ],
+      "instructions": [
+        "Press and cube tofu; sear until golden.",
+        "Stir-fry vegetables; add garlic.",
+        "Toss with soy sauce and a little sesame oil; serve over rice."
+      ]
+    },
+    {
+      "name": "Spinach Mushroom Quesadilla",
+      "time_min": 15,
+      "calories": 540,
+      "ingredients": [
+        "tortilla",
+        "cheddar",
+        "mushroom",
+        "spinach",
+        "onion",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Saut\u00e9 onion and mushroom; add spinach until wilted.",
+        "Assemble tortilla with cheese and veg; cook both sides until melted."
+      ]
+    },
+    {
+      "name": "Chana Masala",
+      "time_min": 28,
+      "calories": 480,
+      "ingredients": [
+        "chickpeas",
+        "onion",
+        "tomato",
+        "garlic",
+        "ginger",
+        "cumin",
+        "curry powder",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Saut\u00e9 onion in oil; add garlic and ginger.",
+        "Stir in cumin and curry powder; add tomato and chickpeas.",
+        "Simmer 10\u201312 min; season with salt."
+      ]
+    },
+    {
+      "name": "Vegetable Fried Rice",
+      "time_min": 18,
+      "calories": 520,
+      "ingredients": [
+        "rice",
+        "egg",
+        "carrot",
+        "peas",
+        "green onion",
+        "soy sauce",
+        "oil",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Scramble eggs; set aside.",
+        "Stir-fry veg; add cold rice and soy sauce.",
+        "Fold in eggs; season to taste."
+      ]
+    },
+    {
+      "name": "Pasta Primavera",
+      "time_min": 22,
+      "calories": 540,
+      "ingredients": [
+        "pasta",
+        "broccoli",
+        "carrot",
+        "bell pepper",
+        "olive oil",
+        "garlic",
+        "parmesan",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Boil pasta; reserve some water.",
+        "Saut\u00e9 veg with garlic; toss with pasta and a splash of pasta water.",
+        "Finish with parmesan, salt, pepper."
+      ]
+    },
+    {
+      "name": "Lemon Garlic Chickpeas",
+      "time_min": 15,
+      "calories": 380,
+      "ingredients": [
+        "chickpeas",
+        "garlic",
+        "lemon",
+        "olive oil",
+        "parsley",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Warm olive oil; lightly saut\u00e9 garlic.",
+        "Add chickpeas; season with lemon juice, salt, pepper.",
+        "Finish with chopped parsley."
+      ]
+    },
+    {
+      "name": "Quinoa Bowl",
+      "time_min": 25,
+      "calories": 520,
+      "ingredients": [
+        "quinoa",
+        "cucumber",
+        "tomato",
+        "spinach",
+        "feta",
+        "olive oil",
+        "lemon",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Cook quinoa; cool slightly.",
+        "Toss with chopped veg, olive oil, lemon, salt, pepper; add feta."
+      ]
+    },
+    {
+      "name": "Cauliflower Curry",
+      "time_min": 30,
+      "calories": 450,
+      "ingredients": [
+        "cauliflower",
+        "onion",
+        "garlic",
+        "tomato",
+        "curry powder",
+        "coconut milk",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Saut\u00e9 onion and garlic; add curry powder.",
+        "Add tomato, cauliflower, coconut milk; simmer until tender.",
+        "Season with salt."
+      ]
+    },
+    {
+      "name": "Margherita Flatbread",
+      "time_min": 15,
+      "calories": 560,
+      "ingredients": [
+        "flatbread",
+        "tomato",
+        "mozzarella",
+        "basil",
+        "olive oil",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Top flatbread with sliced tomato and mozzarella.",
+        "Bake or pan-cook until cheese melts; finish with basil, oil, salt, pepper."
+      ]
+    },
+    {
+      "name": "Potato Pea Curry",
+      "time_min": 28,
+      "calories": 520,
+      "ingredients": [
+        "potato",
+        "peas",
+        "onion",
+        "garlic",
+        "ginger",
+        "curry powder",
+        "tomato",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Saut\u00e9 onion, garlic, ginger; add curry powder.",
+        "Add cubed potato, tomato, peas; simmer until potato is tender.",
+        "Season with salt."
+      ]
+    },
+    {
+      "name": "Broccoli Pesto Pasta",
+      "time_min": 20,
+      "calories": 560,
+      "ingredients": [
+        "pasta",
+        "broccoli",
+        "pesto",
+        "parmesan",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Boil pasta with broccoli florets.",
+        "Toss with pesto and parmesan; season to taste."
+      ]
+    },
+    {
+      "name": "Egg Fried Rice",
+      "time_min": 15,
+      "calories": 520,
+      "ingredients": [
+        "rice",
+        "egg",
+        "soy sauce",
+        "green onion",
+        "oil",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Scramble eggs; set aside.",
+        "Stir-fry rice; add soy sauce and green onion.",
+        "Fold in eggs; season and serve."
+      ]
+    },
+    {
+      "name": "Red Lentil Dal",
+      "time_min": 25,
+      "calories": 430,
+      "ingredients": [
+        "red lentils",
+        "onion",
+        "garlic",
+        "ginger",
+        "turmeric",
+        "cumin",
+        "tomato",
+        "oil",
+        "salt"
+      ],
+      "instructions": [
+        "Rinse lentils; simmer with water until soft.",
+        "Make a tadka: saut\u00e9 onion, garlic, ginger with spices; add tomato.",
+        "Stir into lentils; salt to taste."
+      ]
+    },
+    {
+      "name": "Veggie Burrito Bowl",
+      "time_min": 22,
+      "calories": 560,
+      "ingredients": [
+        "rice",
+        "black beans",
+        "corn",
+        "lettuce",
+        "tomato",
+        "cheddar",
+        "cumin",
+        "lime",
+        "salt"
+      ],
+      "instructions": [
+        "Warm beans with cumin and salt.",
+        "Assemble bowl with rice, beans, corn, lettuce, tomato, cheddar; squeeze lime."
+      ]
+    },
+    {
+      "name": "Garlic Butter Pasta",
+      "time_min": 15,
+      "calories": 580,
+      "ingredients": [
+        "pasta",
+        "garlic",
+        "butter",
+        "parmesan",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Boil pasta.",
+        "Melt butter; gently cook garlic; toss with pasta and parmesan."
+      ]
+    },
+    {
+      "name": "Tofu Peanut Noodles",
+      "time_min": 22,
+      "calories": 600,
+      "ingredients": [
+        "noodles",
+        "tofu",
+        "peanut butter",
+        "soy sauce",
+        "garlic",
+        "lime",
+        "green onion",
+        "sesame oil"
+      ],
+      "instructions": [
+        "Whisk peanut butter with soy sauce, lime, and a splash of water.",
+        "Pan-fry tofu; cook noodles; toss everything with sauce; top with green onion."
+      ]
+    },
+    {
+      "name": "Mushroom Risotto (Quick)",
+      "time_min": 28,
+      "calories": 590,
+      "ingredients": [
+        "rice",
+        "mushroom",
+        "onion",
+        "garlic",
+        "butter",
+        "parmesan",
+        "stock",
+        "salt",
+        "pepper"
+      ],
+      "instructions": [
+        "Saut\u00e9 onion and mushroom in butter; add garlic.",
+        "Add rice; stir; gradually add hot stock until creamy.",
+        "Finish with parmesan; season."
+      ]
+    }
+  ]
+}

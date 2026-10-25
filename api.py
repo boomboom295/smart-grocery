@@ -12,18 +12,17 @@ from smart_grocery.planner import plan
 
 # ---------- Config ----------
 ROOT = Path(__file__).parent
-RECIPES_PATH = ROOT / "data" / "recipes.sample.json"
+RECIPES_PATH = ROOT / "data" / "recipes.json"
 PANTRY_PATH  = ROOT / "data" / "pantry.json"
 PRICE_OVERRIDES_PATH: Optional[Path] = None  # set a real path later if you add overrides
 
 # ---------- FastAPI ----------
 app = FastAPI(title="Smart Grocery API")
 
-# Allow Vite dev server and same-origin (and * for simplicity)
+# The front-end is served separately (python -m http.server 5173)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173", "*"],
-    allow_credentials=True,
+    allow_origins=["http://127.0.0.1:5173", "http://localhost:5173"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -114,16 +113,19 @@ def plan_week_server(req: PlanWeekRequest):
 
     pantry_items = load_pantry(PANTRY_PATH)
 
-    res = plan(
-        recipes_path=str(RECIPES_PATH),
-        pantry_items=pantry_items,                 # <— pass items, not a path
-        budget=req.budget,
-        max_time=req.max_time,
-        k_new=req.k_new,
-        strategy=req.strategy,
-        price_overrides_path=str(PRICE_OVERRIDES_PATH) if PRICE_OVERRIDES_PATH else None,
-        max_calories_per_meal=req.max_calories_per_meal,
-    )
+    try:
+        res = plan(
+            recipes_path=str(RECIPES_PATH),
+            pantry_items=pantry_items,
+            budget=req.budget,
+            max_time=req.max_time,
+            k_new=req.k_new,
+            strategy=req.strategy,
+            price_overrides_path=str(PRICE_OVERRIDES_PATH) if PRICE_OVERRIDES_PATH else None,
+            max_calories_per_meal=req.max_calories_per_meal,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=422, detail=str(e))
 
     week_plan = [_coerce_recipe_for_frontend(r) for r in res.get("recipes", [])]
     return {

@@ -4,24 +4,8 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 import json
 
-# If you already define Ingredient/Recipe elsewhere, import them:
-try:
-    from .models import Ingredient, Recipe
-except Exception:
-    # lightweight fallback types if models import fails during editing
-    from dataclasses import dataclass
-    @dataclass
-    class Ingredient:
-        name: str
-        qty: float = 0.0
-        unit: str = ""
-    @dataclass
-    class Recipe:
-        name: str
-        ingredients: List[Ingredient]
-        # optional attrs; we will set with setattr if not present in __init__
-        # time_min: int
-        # calories: int
+from .models import Ingredient, Recipe
+
 
 def _coerce_recipe_struct(r: Dict[str, Any]) -> Dict[str, Any]:
     """Make recipe dict tolerant: accept either dicts or strings for ingredients/instructions."""
@@ -80,21 +64,16 @@ def load_recipes(path: str | Path) -> List[Recipe]:
     out: List[Recipe] = []
     for r in items:
         rr = _coerce_recipe_struct(r)
-        # Try constructor with keywords; if the model differs, set attrs after
-        try:
-            rec = Recipe(name=rr["name"], ingredients=rr["ingredients"])
-        except TypeError:
-            # some projects have Recipe(name, ingredients)
-            rec = Recipe(rr["name"], rr["ingredients"])  # type: ignore
-
-        # attach optional attributes
-        for k in ("time_min", "calories", "instructions"):
-            try:
-                setattr(rec, k, rr[k])
-            except Exception:
-                pass
-        out.append(rec)
+        out.append(Recipe(**rr))
     return out
+
+def load_catalog_prices(path: str | Path) -> Dict[str, float]:
+    """Prices stored in the catalog itself ({"recipes": [...], "prices": {...}}), if any."""
+    with Path(path).open("r") as f:
+        data = json.load(f)
+    prices = data.get("prices", {}) if isinstance(data, dict) else {}
+    return {str(k).lower(): float(v) for k, v in prices.items()}
+
 
 def load_pantry(path: str | Path) -> List[str]:
     p = Path(path)
@@ -102,9 +81,9 @@ def load_pantry(path: str | Path) -> List[str]:
         return []
     with p.open("r") as f:
         data = json.load(f)
-    # accept {"items":[...]} or [...]
-    if isinstance(data, dict) and "items" in data:
-        return [str(x).lower() for x in data["items"]]
+    # accept {"items":[...]}, {"pantry":[...]} or [...]
+    if isinstance(data, dict):
+        data = data.get("items", data.get("pantry", []))
     if isinstance(data, list):
         return [str(x).lower() for x in data]
     return []
