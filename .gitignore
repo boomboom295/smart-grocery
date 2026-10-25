@@ -1,0 +1,11 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.pytest_cache/
+data/pantry.json
+data/plan.output.json
+data/plan.report.md
+data/*.csv

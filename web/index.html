@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Smart Grocery — Meal Planner</title>
+<link rel="stylesheet" href="styles.css" />
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="topbar">
+  <h1>Smart Grocery</h1>
+  <nav class="tabs">
+    <button class="tab active" data-screen="onboard">Pantry</button>
+    <button class="tab" data-screen="planner">Plan Week</button>
+    <button class="tab" data-screen="shop">Shop</button>
+  </nav>
+</header>
+
+<main class="container">
+  <!-- Pantry screen -->
+  <section id="screen-onboard" class="card">
+    <div class="header">
+      <h2>What’s in your pantry?</h2>
+      <div class="inline">
+        <button id="pingBtn" class="btn">Check API</button>
+        <span id="pingStatus" class="status"></span>
+      </div>
+    </div>
+
+    <div class="pantry-editor">
+      <div class="chips" id="pantryChips"></div>
+      <div class="addrow">
+        <input id="addInput" placeholder="e.g., eggs, pasta, olive oil" />
+        <button id="addBtn" class="btn btn-primary">Add</button>
+        <button id="savePantryBtn" class="btn">Save</button>
+        <span id="saveStatus" class="status"></span>
+      </div>
+      <div class="hint">Tip: paste a comma-separated list (milk, bread, tomatoes…)</div>
+    </div>
+  </section>
+
+  <!-- Planner screen -->
+  <section id="screen-planner" class="card hidden">
+    <h2>Plan your week</h2>
+    <div class="grid">
+      <label><span>Weekly Budget ($)</span><input type="number" id="budgetWeek" value="70" step="1" min="0" /></label>
+      <label><span>Max Time (min/meal)</span><input type="number" id="maxTime" value="40" step="5" min="0" /></label>
+      <label><span>RMR@k</span><input type="number" id="rmrK" value="2" step="1" min="0" /></label>
+      <label><span>Max Calories (0=off)</span><input type="number" id="maxCal" value="0" step="50" min="0" /></label>
+      <label>
+        <span>Strategy</span>
+        <select id="strategy">
+          <option>knapsack_max_recipes</option>
+          <option>greedy_cost</option>
+          <option>greedy_low_missing</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="row">
+      <button id="planWeekBtn" class="btn btn-primary">Plan Week</button>
+      <span id="planStatus" class="status"></span>
+    </div>
+    <div id="candidateList" class="candgrid"></div>
+    <div id="weekGrid" class="weekgrid"></div>
+
+    <div class="card subcard hidden" id="metricsCard">
+      <h3>Weekly Metrics</h3>
+      <div id="metrics"></div>
+    </div>
+  </section>
+
+  <!-- Shop screen -->
+  <section id="screen-shop" class="card hidden">
+    <h2>Your shopping list</h2>
+    <div class="tablewrap"><table id="shopTable"></table></div>
+    <div class="row">
+      <button id="dlShopCsv" class="btn">Download CSV</button>
+      <button id="dlPlanJson" class="btn">Download Week JSON</button>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">© Smart Grocery</footer>
+<div id="recipeModal" class="modal hidden">
+  <div class="modal-dialog">
+    <div class="modal-head">
+      <h3 id="modalTitle"></h3>
+      <button id="modalClose" class="btn">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-meta" id="modalMeta"></div>
+      <div class="modal-cols">
+        <div>
+          <h4>Ingredients</h4>
+          <ul id="modalIngredients"></ul>
+        </div>
+        <div>
+          <h4>Instructions</h4>
+          <ol id="modalInstructions"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
